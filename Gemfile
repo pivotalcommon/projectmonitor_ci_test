@@ -24,6 +24,11 @@ gem 'jquery-rails'
 
 group :development do
   gem 'rspec-rails'
+  gem 'lobot'
+end
+
+group :test do
+  gem "headless"
 end
 
 # To use ActiveModel has_secure_password
