@@ -5,3 +5,9 @@
 require File.expand_path('../config/application', __FILE__)
 
 ProjectmonitorCiTest::Application.load_tasks
+
+task :default => :spec
+
+require 'rspec/core/rake_task'
+
+RSpec::Core::RakeTask.new
